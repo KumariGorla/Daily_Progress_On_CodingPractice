@@ -44,16 +44,16 @@ class convertArr2LL {
     public static void main(String[] args) {
         int arr[] = {1,2,3,4,5};
         Node head = ConvArrtoLL(arr);
-        boolean Serch = SeLL(head, 3);
-        System.out.println(Serch);
-        //Node temp = head;
-        //while(temp!=null){
-        //    System.out.print(temp.data);
-        //    temp = temp.next;
-        //    if(temp!=null){{
-        //        System.out.print("->");
-        //    }}
-        //}
+        //boolean Serch = SeLL(head, 3);
+        //System.out.println(Serch);
+        Node temp = head;
+        while(temp!=null){
+            System.out.print(temp.data);
+            temp = temp.next;
+            if(temp!=null){{
+                System.out.print("->");
+            }}
+        }
         //int res = LenLL(head);
         //System.out.println(res);
     }
